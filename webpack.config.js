@@ -13,6 +13,7 @@ module.exports = {
   },
   plugins: PLUGINS,
   devServer: {
-    disableHostCheck: true
+    static:[__dirname],
+    allowedHosts: 'auto'
   }
 };
