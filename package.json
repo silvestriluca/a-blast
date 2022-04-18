@@ -1,10 +1,10 @@
 {
   "name": "a-blast",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "A WebVR FPS mini-game demo using A-Frame by Mozilla VR.",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
-    "start": "webpack-dev-server --host 0.0.0.0 --progress --colors --hot -d --inline",
+    "start": "webpack serve --host 0.0.0.0 --progress --color --hot -d",
     "lint": "semistandard -v | snazzy"
   },
   "repository": "aframevr/a-blast",
