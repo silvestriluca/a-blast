@@ -1,6 +1,7 @@
 # A-Blast
 
-A WebVR FPS mini-game demo using [A-Frame](http://aframe.io) by [Mozilla VR](http://mozvr.com).
+A WebVR FPS mini-game demo using [A-Frame](http://aframe.io) by [Mozilla VR](http://mozvr.com).  
+Forked in 2022 by *Luca Silvestri* to update it to modern A-frame and latest WebXR.
 
 [Read the introductory blog post.](https://blog.mozvr.com/a-blast/)
 
@@ -19,7 +20,7 @@ A WebVR FPS mini-game demo using [A-Frame](http://aframe.io) by [Mozilla VR](htt
 ## Local Development
 
 ```bash
-git clone git@github.com:aframevr/a-blast && cd a-blast
+git clone git@github.com:silvestriluca/a-blast && cd a-blast
 npm install
 npm start
 ```
@@ -34,3 +35,6 @@ We are opened to new ideas and contributions, feel free to send a pull request w
 
 
 Soundtrack by José Manuel Pérez Paredes AKA [JosSs](https://soundcloud.com/josss-1/tracks)
+
+## Fork info: Changelog
+Refer to [CHANGELOG](./CHANGELOG.md) file
