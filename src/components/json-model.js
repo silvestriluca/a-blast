@@ -29,7 +29,7 @@ AFRAME.registerComponent('json-model', {
     if (!src || src === oldData.src) { return; }
 
     if (this.data.singleModel) {
-      this.loader = new THREE.JSONLoader();
+      this.loader = new THREE.LegacyJSONLoader();
       this.loader.setTexturePath(this.data.texturePath);
       this.loader.load(src, this.onModelLoaded.bind(this));
     }
