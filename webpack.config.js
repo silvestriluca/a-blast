@@ -1,8 +1,11 @@
 var webpack = require('webpack');
+const TerserPlugin = require("terser-webpack-plugin");
 
-var PLUGINS = [];
+var minimize = false;
+var MINIMIZER = [];
 if (process.env.NODE_ENV === 'production') {
-  PLUGINS.push(new webpack.optimize.UglifyJsPlugin());
+  minimize = true;
+  MINIMIZER.push(new TerserPlugin());
 }
 
 module.exports = {
@@ -11,7 +14,10 @@ module.exports = {
     path: __dirname,
     filename: 'build/build.js'
   },
-  plugins: PLUGINS,
+  optimization: {
+    minimize: minimize,
+    minimizer: MINIMIZER
+  },
   devServer: {
     static:[__dirname],
     allowedHosts: 'auto'
