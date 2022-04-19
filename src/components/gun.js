@@ -30,6 +30,11 @@ AFRAME.registerComponent('shoot', {
         if (evt.code === 'Space' || evt.keyCode === '32') { self.shoot(); }
       });
     }
+
+    // Add mouse listener.
+    window.addEventListener('mousedown', function (evt) {
+      self.shoot();
+    });
 /*
     if (AFRAME.utils.device.isMobile())
     {
