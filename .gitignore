@@ -167,3 +167,6 @@ private/
 
 ################### GitHub Pages ###################
 gh-pages/
+
+################### Webpack build files ###################
+build/
