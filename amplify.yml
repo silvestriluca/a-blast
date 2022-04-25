@@ -14,10 +14,10 @@ frontend:
       - 'index.html'
       - 'favicon.ico'
       - 'manifest.webmanifest'
-      - 'assets'
-      - 'css'
-      - 'build'
-      - 'vendor'
+      - 'assets/**/*'
+      - 'css/**/*'
+      - 'build/**/*'
+      - 'vendor/**/*'
   cache:
     paths:
       - node_modules/**/*
